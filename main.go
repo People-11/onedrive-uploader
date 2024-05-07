@@ -40,8 +40,8 @@ func printHelp() {
 }
 
 func prepareFlags() {
-	flag.StringVar(&AppFlags.ConfigPath, "c", "", "path to config.json")
-	flag.IntVar(&AppFlags.UploadSessionRangeSize, "u", 320*30, "upload range size in KB (multiple of 320 KB)")
+	flag.StringVar(&AppFlags.ConfigPath, "c", "config.json", "path to config.json")
+	flag.IntVar(&AppFlags.UploadSessionRangeSize, "u", 320*300, "upload range size in KB (multiple of 320 KB)")
 	flag.BoolVar(&AppFlags.Quiet, "q", false, "output errors only")
 	flag.BoolVar(&AppFlags.Verbose, "v", false, "verbose output")
 	flag.Parse()
